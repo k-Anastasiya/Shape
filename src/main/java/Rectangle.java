@@ -1,4 +1,4 @@
-   public class Rectangle extends Shape{
+   public class Rectangle extends Shape implements CountablePerimeter{
   double width;
   double length;
 
@@ -16,4 +16,8 @@
     }
 
 
-}
+       @Override
+       public double getPerimeter() {
+           return ((width+length) *2);
+       }
+   }
